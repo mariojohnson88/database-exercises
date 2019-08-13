@@ -1,0 +1,13 @@
+CREATE DATABASE database_name;
+USE database_name;                                                                    switches to selected database
+CREATE USER 'username'@'hostname' IDENTIFIED BY 'password';                           creates user
+CREATE TABLE IF NOT EXIST table_name;                                                 creates a new database
+DROP USER 'username'@'hostname';                                                      deletes user
+DROP DATABASE IF EXIST database_name;                                                 deletes database
+DROP TABLE IF EXIST table_name;                                                       deletes table
+SHOW DATABASES();                                                                     shows all databases
+SHOW tables;                                                                          show tables described on that database
+SHOW CREATE DATABASE database_name;                                                   shows structure
+SHOW CREATE TABLE table_name;                                                         shows structure
+DESCRIBE table_name;                                                                  shows table
+SELECT database();                                                                    see what database we are currently interacting with
