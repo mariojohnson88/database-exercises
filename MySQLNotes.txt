@@ -5,9 +5,22 @@ CREATE TABLE IF NOT EXIST table_name;                                           
 DROP USER 'username'@'hostname';                                                      deletes user
 DROP DATABASE IF EXIST database_name;                                                 deletes database
 DROP TABLE IF EXIST table_name;                                                       deletes table
+TRUNCATE table_name;
 SHOW DATABASES();                                                                     shows all databases
 SHOW tables;                                                                          show tables described on that database
 SHOW CREATE DATABASE database_name;                                                   shows structure
 SHOW CREATE TABLE table_name;                                                         shows structure
 DESCRIBE table_name;                                                                  shows table
 SELECT database();                                                                    see what database we are currently interacting with
+SELECT col_1, col_2, ... FROM table_name;
+SELECT * FROM table_name;
+    [WHERE col_1 ='val1']
+    [AND col_2 = val2]
+    [OR col_3 = val3];
+INSERT INTO  table_name (col_1, col_2, ...)
+    VALUES ('val_1', 'val_2'
+UPDATE table_name
+    SET col_1 = val_1
+    WHERE id - id_1;
+DELETE from table_name
+    WHERE id = id_1;
