@@ -24,3 +24,18 @@ UPDATE table_name
     WHERE id - id_1;
 DELETE from table_name
     WHERE id = id_1;
+
+
+THINGS TO KEEP IN MIND:
+
+Whenever you want to run your code in your sql file you need to use "source". But you must be in the database.
+EX: source file_name.sql;
+    source select_exercises.sql;
+    source albums_seeder.sql;
+
+Spaces count when you are writing scripts in MySQL.
+
+When working with a number value it does not matter if the value is in quotes.
+EX: SELECT record_name FROM albums WHERE release_date = 1990;
+                              ||
+    SELECT record_name FROM albums WHERE release_date = '1990';
